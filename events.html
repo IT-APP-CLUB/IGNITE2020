@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>IGNITE | EVENTS</title>
+</head>
+<body>
+
+	<section class="cd-section">
+			<h1 style="font-size: 60px;color: #fff; margin:20px 20px 60px 20px; font-weight: bold;">EVENTS</h1>
+		<div class="cd-modal-action">
+			<a href="#0" class="btn" data-type="modal-trigger">Clash of Coders</a>
+			<span class="cd-modal-bg"></span>
+		</div> <!-- cd-modal-action -->
+<br><br>	
+		<div class="cd-modal-action">
+			<a href="#0" class="btn" data-type="modal-trigger">Brain Chase</a>
+			<span class="cd-modal-bg"></span>
+		</div> <!-- cd-modal-action -->
+<br><br>
+		<div class="cd-modal-action">
+			<a href="#0" class="btn" data-type="modal-trigger">Webber</a>
+			<span class="cd-modal-bg"></span>
+		</div> <!-- cd-modal-action -->
+
+
+		<div class="cd-modal">
+			<div class="cd-modal-content">
+						<h2>Clash of Coders</h2>
+			<div class="tab">
+			  <button class="tablinks" onclick="openCity(event, 'Introduction')" id="defaultOpen">Intro</button>
+			  <button class="tablinks" onclick="openCity(event, 'Rules')">Rules</button>
+			  <button class="tablinks" onclick="openCity(event, 'Rounds')">Rounds</button>
+			</div>
+
+			<div id="Introduction" class="tabcontent">
+				<p>
+				  	It is a programming event to test the fundamentals of the most popular programming languages of all participants. The rounds will start with the basic concepts and slowly buildup to challenge their programming and logic application skills. This event will help developers to test and re-evaluate their basics and beginners to solidify their concepts. The languages permitted in this event are C, C++, java and Python. <br><br>
+				  	Registration fees: ₹ 200. <br><br>Prize Worth: ₹ 5,000/-. 
+				</p>
+			</div>
+
+			<div id="Rules" class="tabcontent">
+				<p>
+					● Participant cannot use any other language than the two he has already selected. <br>
+					● Participant has to select 2 languages for quiz round. Other rounds will be either in C or C++. <br>
+					● Do not generate the entire pattern using only ‘printf’ or ‘cout’ statements. Use your logic. <br>
+					● Internet access is prohibited for referring code solution. <br>
+					● Generated pattern should be exactly the same as given in the problem statement. <br>
+					● If anyone is found violating these rules, they will be immediately disqualified from the event.
+				</p> 
+			</div>
+
+			<div id="Rounds" class="tabcontent">
+				<p>
+					<b>Round 1: Quiz</b><br>
+					● All participants will have to choose 2 languages from C, C++, Java and Python. <br>
+					● Each participant will be given 100 randomly selected MCQ questions based on their selected programming languages to solve within 30 minutes.<br>
+					● On the basis of how many questions are answered correctly, the participant’s performance will be evaluated.<br>
+					● After grading all students, the top 50% will be selected for the next round.<br><br>
+					<b>Round 2: Pattern Generation</b><br>
+					● Each participant will be given a pattern which they will have to generate using the programming language specified in the problem statement and will have to complete this task within 30 minutes.<br>
+					● The participants will be evaluated on the basis of their completion speed and the top 50% will be selected for the final round.<br><br>
+					<b>Round 3: Advanced programming</b><br>
+					● Each participant has to pick a chit which contains a problem statement and they will have to satisfy all necessary objectives given using programming language specified in the chit.<br>
+					● The first participant who successfully implements all modules of the problem statement correctly will be declared the winner.<br>
+				</p>
+
+			</div>
+			</div> <!-- cd-modal-content -->
+		</div> <!-- cd-modal -->
+		
+		<a href="#0" class="cd-modal-close">Close</a>
+	</section> <!-- .cd-section -->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
