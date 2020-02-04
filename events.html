@@ -5,33 +5,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/event.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/aos.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
 	<title>IGNITE | EVENTS</title>
 </head>
-<body>
-
+<body background="img/particle.png">
+	
 	<section class="cd-section">
-			<h1 style="font-size: 60px;color: #fff; margin:20px 20px 60px 20px; font-weight: bold;">EVENTS</h1>
-		<div class="cd-modal-action">
-			<a href="#0" class="btn" data-type="modal-trigger">Clash of Coders</a>
-			<span class="cd-modal-bg"></span>
-		</div> <!-- cd-modal-action -->
-<br><br>	
-		<div class="cd-modal-action">
-			<a href="#0" class="btn" data-type="modal-trigger">Brain Chase</a>
-			<span class="cd-modal-bg"></span>
-		</div> <!-- cd-modal-action -->
-<br><br>
-		<div class="cd-modal-action">
-			<a href="#0" class="btn" data-type="modal-trigger">Webber</a>
-			<span class="cd-modal-bg"></span>
-		</div> <!-- cd-modal-action -->
-
-
+		<h1 style="font-size: 60px;color: #fff; margin:20px 20px 60px 20px; font-weight: bold;">EVENTS</h1>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="cd-modal-action" data-aos="fade-right">
+									<a href="#0" class="btn" data-type="modal-trigger" style="background-image: url('img/coclg.png');"></a>
+									<span class="cd-modal-bg"></span>
+								</div> <!-- cd-modal-action -->
+									
+								<div class="cd-modal-action" data-aos="fade-left">
+									<a href="#0" class="btn" data-type="modal-trigger" style="background-image: url('img/kslg.png');"></a>
+									<span class="cd-modal-bg"></span>
+								</div> <!-- cd-modal-action -->
+								
+								<div class="cd-modal-action" data-aos="fade-right">
+									<a href="#0" class="btn" data-type="modal-trigger" style="background-image: url('img/mplg.png');"></a>
+									<span class="cd-modal-bg"></span>
+								</div> <!-- cd-modal-action -->
+							</div>
+							<div class="col-md-6">
+								<div class="cd-modal-action" data-aos="fade-right">
+									<a href="#0" class="btn" data-type="modal-trigger" style="background-image: url('img/tvtlg.png');"></a>
+									<span class="cd-modal-bg"></span>
+								</div> <!-- cd-modal-action -->
+									
+								<div class="cd-modal-action" data-aos="fade-right">
+									<a href="#0" class="btn" data-type="modal-trigger" style="background-image: url('img/wblg.png');"></a>
+									<span class="cd-modal-bg"></span>
+								</div> <!-- cd-modal-action -->
+								
+								<div class="cd-modal-action" data-aos="fade-right">
+									<a href="#0" class="btn" data-type="modal-trigger" style="background-image: url('img/coclg.png');"></a>
+									<span class="cd-modal-bg"></span>
+								</div> <!-- cd-modal-action -->
+							</div>
+							
+						</div>
+					</div>	
+				</div>
 		<div class="cd-modal">
 			<div class="cd-modal-content">
 						<h2>Clash of Coders</h2>
@@ -81,6 +103,15 @@
 		<a href="#0" class="cd-modal-close">Close</a>
 	</section> <!-- .cd-section -->
 
+
+<script src="./css/aos.js"></script>
+ <script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+</script> 
+
+
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -100,6 +131,7 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 <script src="js/jquery-2.1.1.js"></script>
+<script src="./nav.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
